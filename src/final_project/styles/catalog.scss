@@ -1,0 +1,10 @@
+@import './variables';
+@import './mixins';
+
+.content-wrapper {
+    max-width: $max-content-width;
+    width: 100%;
+    @include absoluteCenter;
+    @include tablet;
+    
+}
