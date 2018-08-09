@@ -1,0 +1,116 @@
+@import './variables';
+
+header {
+    width: 100%;
+    height: 668px;
+    background: url('images/header_bg.jpg')no-repeat center;
+    background-size: cover;
+}
+header .inner{
+    height: 668px;
+}
+.weather_top_blk{
+    display: block;
+    padding: 37px 0 0 150px;
+}
+.weather_top_blk .weather_data, .weather_top_blk img{
+    display: inline-block;
+    vertical-align: top;
+}
+.weather_top_blk img{
+    width: 38px;
+    margin: 0 10px 0 0;
+}
+.weather_top_blk .weather_data p, .weather_top_blk .weather_data span{
+    display: block;
+    color: #fff;
+    font-family: Arial, sans-serif;
+    font-size: 20px;
+    margin: 0;
+    letter-spacing: -0.5px;
+}
+.weather_top_blk .weather_data span{
+    font-size: 12px;
+}
+.nav_btn{
+    position: absolute;
+    width: 38px;
+    top: 37px;
+    right: 150px;
+    cursor: pointer;
+}
+.nav_btn span{
+    display: block;
+    background: #fff;
+    height: 3px;
+    margin-bottom: 7px;
+}
+.logo{
+    position: absolute;
+    width: 155px;
+    height: 45px;
+    border-bottom: 1px #fff solid;
+    border-bottom: 1px #fff solid;
+    background: url('images/logo.svg')no-repeat center 1px;
+    background-size: auto 45px;
+    left: 50%;
+    margin-left: -77.5px;
+    top: 105px;
+}
+.explore_btn{
+    text-transform: uppercase;
+    height: 50px;
+    border-radius: 100px;
+    background-color: #2387f5;
+    padding: 0 30px;
+    color: #fff;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    display: block;
+    margin: 60px auto 0 auto;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+.search_form{
+    position: absolute;
+    width: 615px;
+    bottom: -25px;
+    left: 50%;
+    margin-left: -307.5px;
+}
+.search_form:before{
+    content: "";
+    position: absolute;
+    top:15px;
+    width: 615px;
+    height: 49px;
+    opacity: 0.25;
+    border-radius: 34px;
+    -webkit-filter: blur(15.4px);
+    filter: blur(15.4px);
+    background-color: #4a4a4a;
+}
+.search_form input[type="text"]{
+    display: block;
+    width: 565px;
+    padding-left: 50px;
+    height: 49px;
+    border-radius: 34px;
+    background-color: #fff;
+    border: none;
+    outline: none;
+    position: relative;
+}
+.search_form input[type="submit"]{
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    top: 12px;
+    left: 19px;
+    background: url('images/magn.jpg')no-repeat center;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}

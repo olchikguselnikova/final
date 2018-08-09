@@ -1,2 +1,59 @@
 @import './variables';
 
+html, body{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+.inner{
+    display: block;
+    margin: 0 auto;
+    position: relative;
+    max-width: 1440px;
+}
+h1{
+    text-transform: uppercase;
+    font-family: Arial, sans-serif;
+    font-size: 72px;
+    font-weight: normal;
+    letter-spacing: -1.7px;
+    text-align: center;
+    color: #fff;
+    margin: 68px 0 0 0;
+}
+h2{
+    text-transform: uppercase;
+    font-family: Hind, sans-serif;
+    font-size: 36px;
+    font-weight: 300;
+    letter-spacing: -0.9px;
+    text-align: center;
+    color: #fff;
+    margin-top: 12px;
+}
+h3{
+    font-family: Born, sans-serif;
+    font-size: 36px;
+    font-weight: normal;
+    letter-spacing: -0.9px;
+    text-align: center;
+    margin: 0;
+}
+h3 span{
+    color: #9b9b9b;
+    text-decoration: line-through;
+}
+.has_big_letters:before{
+    content: attr(data-big_txt);
+    font-family: Arial, sans-serif;
+    font-size: 288px;
+    font-weight: bold;
+    letter-spacing: 3.3px;
+    text-align: center;
+    color: #e6f1f8;
+    width: 100%;
+    position: absolute;
+    z-index: 1;
+    top: -227px;
+    left: 0;
+}
