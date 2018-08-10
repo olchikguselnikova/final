@@ -9,113 +9,250 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 <link href="final_project.css" rel="stylesheet"></head>
 <body>
-    <div class="page-wrapper">
-        <header class="page-header">
-            <div class="weather">
-                <div class="weather__icon">
-                    <img src="./assets/images/rain.png" alt="Rain">
-                </div>
-                <div class="weather__temperature">6°</div>
-                <div class="weather__description">wind: 19 mph <br>humidity: 70%</br> </div>
-            </div>
-            <div class="menu">
-                <div class="menu__control-bar"></div>
-                <div class="menu__control-bar"></div>
-                <div class="menu__control-bar"></div>
-            </div>
-            <div class="container">
-                <div class="container__icon">
-                    <img src="./assets/images/london-eye-in-london-england.png" alt="London-eye-in-London-England">
-                </div>
-                <hr class="container__line">
-                <h1 class="container__name">LONDON</h1>
-                <p class="container__text">Explore the secret life of the city.</p>
-                <button class="guide">EXPLORE THE CITY</button>
-                
-                    <div class="container-1">
-                        <span class="icon"><i class="fa fa-search"></i></span>
-                        <input type="search" class="search" placeholder="Search in the city" />
-                    </div>
-                
-            </div>
-        </header>
-        <main>
-            <p class="leisure">Search for your favourite: 
-                <span class="leasure-search">restaurant, museum, hotel, attractions</span>
-            </p>
-            <div class="grid-container">
-                <div class="item col-12 col-xs-12 col-sm-12 col-md-2 col-lg-2 col-xl-2">
-                    <div class="item__content">
-                        <div class="item__icon">
-                            <img src="./assets/images/hotel.png" alt="hotel">
-                        </div>
-                        <div class="item__title">Accomodation</div>
-                        <div class="item__text">Perfect solution:
-                            <br><span class="item__text-grey">hotel, apartment, hostel, guest house</span></br>
-                        </div>
-                    </div>
-                </div>
-                <div class="item col-12 col-xs-12 col-sm-12 col-md-2 col-lg-2 col-xl-2">
-                    <div class="item__content">
-                        <div class="item__icon">
-                            <img src="./assets/images/big-ben.png" alt="big-ben">
-                        </div>
-                        <div class="item__title">Tourist Attractions</div>
-                        <div class="item__text">Search for your favourite: 
-                            <br><span class="item__text-grey">restaurant, museum, hotel, attractions</span></br>
-                        </div>
-                    </div>
-                </div>
-                <div class="item col-12 col-xs-12 col-sm-12 col-md-2 col-lg-2 col-xl-2">
-                    <div class="item__content">
-                        <div class="item__icon">
-                            <img src="./assets/images/hamburger.png" alt="hamburger">
-                        </div>
-                        <div class="item__title">Restaurants</div>
-                        <div class="item__text">You are hungry:
-                            <br><span class="item__text-grey">chinese food, burgers, traditional food</span></br>
-                        </div>
-                    </div>
-                </div>
-                <div class="item col-12 col-xs-12 col-sm-12 col-md-2 col-lg-2 col-xl-2">
-                    <div class="item__content">
-                        <div class="item__icon">
-                            <img src="./assets/images/ticket.png" alt="ticket">
-                        </div>
-                        <div class="item__title">Events & Tickets</div>
-                        <div class="item__text">It's time to have fun: 
-                            <br><span class="item__text-grey">concerts, cinema, exhibitions</span></br>
-                        </div>
-                    </div>
-                </div>
-                <div class="item col-12 col-xs-12 col-sm-12 col-md-2 col-lg-2 col-xl-2">
-                    <div class="item__content">
-                        <div class="item__icon">
-                            <img src="./assets/images/coffee-cup.png" alt="coffee-cup">
-                        </div>
-                        <div class="item__title">Coffee Shop</div>
-                        <div class="item__text">You must wake up: 
-                            <br><span class="item__text-grey">Starbucks, Filicori, Nescafe, Lavazza</span></br>
-                        </div>
-                    </div>
-                </div>
-                <div class="item col-12 col-xs-12 col-sm-12 col-md-2 col-lg-2 col-xl-2">
-                    <div class="item__content">
-                        <div class="item__icon">
-                            <img src="./assets/images/museum.png" alt="museum">
-                        </div>
-                        <div class="item__title">Gouvernement</div>
-                        <div class="item__text">Must see:
-                            <br><span class="item__text-grey">parliament building, district court, royal house</span></br>
-                        </div>
-                    </div>
+    <header>
+        <div class="inner">
+            <div class="weather_top_blk">
+                <img src="./assets/images/rain.svg" />
+                <div class="weather_data">
+                    <p>6°</p>
+                    <span>wind: 19 mph</span>
+                    <span>humidity: 70%</span>
                 </div>
             </div>
-        </main>
-        
-              
-        
-    </div> 
-    
+            <div class="nav_btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="logo"></div>
+            <h1>London</h1>
+            <h2>Explore the secret life of the city.</h2>
+            <button class="explore_btn">Explore the city</button>
+            <form class="search_form">
+                <input type="text" placeholder="Search in the city" />
+                <input type="submit" value="" />
+            </form>
+        </div>
+    </header>
+
+    <main>
+        <div class="inner">
+            <div class="search_suggestions">
+                <p>Search for your favourite: <a href="#">restaurant</a>, <a href="#">museum</a>, <a href="#">hotel</a>, <a href="#">attractions</a></p>
+            </div>
+            <div class="categories">
+                <div class="single_cat">
+                    <img src="./assets/images/hotel.svg" />
+                    <img src="./assets/images/hotel_h.svg" />
+                    <p>Accomodation</p>
+                    <span><strong>Perfect solution:</strong> hotel, apartment, hostel, guest house</span>
+                </div>
+                <div class="single_cat">
+                    <img src="./assets/images/big-ben.svg" />
+                    <img src="./assets/images/big-ben_h.svg" />
+                    <p>Tourist Attractions</p>
+                    <span><strong>Search for your favourite:</strong> restaurant, museum, hotel, attractions</span>
+                </div>
+                <div class="single_cat">
+                    <img src="./assets/images/hamburger.svg" />
+                    <img src="./assets/images/hamburger_h.svg" />
+                    <p>Restaurants</p>
+                    <span><strong>You are hungry:</strong>chinese food, burgers, traditional food</span>
+                </div>
+                <div class="single_cat">
+                    <img src="./assets/images/ticket.svg" />
+                    <img src="./assets/images/ticket_h.svg" />
+                    <p>Events & Tickets</p>
+                    <span><strong>It&apos;s time to have fun:</strong>concerts, cinema, exhibitions</span>
+                </div>
+                <div class="single_cat">
+                    <img src="./assets/images/coffee-cup.svg" />
+                    <img src="./assets/images/coffee-cup_h.svg" />
+                    <p>Coffee Shop</p>
+                    <span><strong>You must wake up:</strong>Starbucks, Filicori, Nescafe, Lavazza</span>
+                </div>
+                <div class="single_cat">
+                    <img src="./assets/images/museum.svg" />
+                    <img src="./assets/images/museum_h.svg" />
+                    <p>Gouvernement</p>
+                    <span><strong>Must see:</strong>parliament building, district court, royal house</span>
+                </div>
+            </div>
+            <div class="latest_news">
+                <h3>Latest news from <span>London Blog</span></h3>
+                <div class="news_slider" class="has_big_letters" data-big_txt="news">
+                    <div class="news_slider_wrapper">
+                        <div class="slide">
+                            <img src="./assets/images/slide1.jpg" />
+                            <div class="slide_description">
+                                <p class="heading">Exploring the food in the heart of the London</p>
+                                <p class="date">25 Aug, 2016</p>
+                                <p class="lead">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s </p>
+                                <div class="author">
+                                    <img src="./assets/images/author_1.png" />
+                                    <span>by Felecia Wilson</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slide">
+                            <img src="./assets/images/slide2.jpg" />
+                            <div class="slide_description">
+                                <p class="heading">The history and architecture of England</p>
+                                <p class="date">25 Aug, 2016</p>
+                                <p class="lead">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s </p>
+                                <div class="author">
+                                    <img src="./assets/images/author_2.png" />
+                                    <span>by Noelle Garza</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slide">
+                            <img src="./assets/images/slide1.jpg" />
+                            <div class="slide_description">
+                                <p class="heading">Exploring the food in the heart of the London</p>
+                                <p class="date">25 Aug, 2016</p>
+                                <p class="lead">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s </p>
+                                <div class="author">
+                                    <img src="./assets/images/author_1.png" />
+                                    <span>by Felecia Wilson</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slide">
+                            <img src="./assets/images/slide2.jpg" />
+                            <div class="slide_description">
+                                <p class="heading">The history and architecture of England</p>
+                                <p class="date">25 Aug, 2016</p>
+                                <p class="lead">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s </p>
+                                <div class="author">
+                                    <img src="./assets/images/author_2.png" />
+                                    <span>by Noelle Garza</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="news_slider_arrow" id="news_slider_prev"></div>
+                    <div class="news_slider_arrow" id="news_slider_next"></div>
+                    <a href="#">More stories</a>
+                </div>
+            </div>
+        </div>
+        <div class="about_section">
+            <div class="about_wrapper">
+                <div class="about_txt">
+                    <h3>About London</h3>
+                    <p>London is the political, economic and cultural capital of Britain. You can visit the Queen's official residence at Buckingham Palace and tour the Houses of Parliament, historic home of the UK government. </p>
+                    <p>London's world-class tourist attractions are renowned across the globe. Many of the most famous attractions are free to visit, for example Tate Modern, the National Gallery and the Victoria and Albert Museum.</p>
+                    <h3>History</h3>
+                    <p>London's history stretches back over thousands of years, and the city boasts four World Heritage Sites: the Palace of Westminster and Westminster Abbey, the Tower of London, Maritime Greenwich and the Royal Botanic Gardens, Kew.</p>
+                    <a href="#">Read more</a>
+                </div>
+                <img src="./assets/images/picture.png" />
+            </div>
+        </div>
+        <div id="select_trip_section" class="has_big_letters" data-big_txt="select trip">
+            <h3>Select your <span>favorite trip</span></h3>
+            <div class="trip_slider">
+                <div class="trip_slider_wrapper">
+                    <div class="slide">
+                        <img src="./assets/images/tab-1.png" />
+                        <div class="slide_hover">
+                            <p>Tower of  London</p>
+                            <span>Take a tour with one of the Yeoman Warders around the Tower of London, one of the world's most famous buildings. </span>
+                            <a href="#">Book now</a>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <img src="./assets/images/tab-3.png" />
+                        <div class="slide_hover">
+                            <p>Tower of  London</p>
+                            <span>Take a tour with one of the Yeoman Warders around the Tower of London, one of the world's most famous buildings. </span>
+                            <a href="#">Book now</a>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <img src="./assets/images/tab-4.png" />
+                        <div class="slide_hover">
+                            <p>Tower of  London</p>
+                            <span>Take a tour with one of the Yeoman Warders around the Tower of London, one of the world's most famous buildings. </span>
+                            <a href="#">Book now</a>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <img src="./assets/images/tab-5.png" />
+                        <div class="slide_hover">
+                            <p>Tower of  London</p>
+                            <span>Take a tour with one of the Yeoman Warders around the Tower of London, one of the world's most famous buildings. </span>
+                            <a href="#">Book now</a>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <img src="./assets/images/tab-1.png" />
+                        <div class="slide_hover">
+                            <p>Tower of  London</p>
+                            <span>Take a tour with one of the Yeoman Warders around the Tower of London, one of the world's most famous buildings. </span>
+                            <a href="#">Book now</a>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <img src="./assets/images/tab-3.png" />
+                        <div class="slide_hover">
+                            <p>Tower of  London</p>
+                            <span>Take a tour with one of the Yeoman Warders around the Tower of London, one of the world's most famous buildings. </span>
+                            <a href="#">Book now</a>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <img src="./assets/images/tab-4.png" />
+                        <div class="slide_hover">
+                            <p>Tower of  London</p>
+                            <span>Take a tour with one of the Yeoman Warders around the Tower of London, one of the world's most famous buildings. </span>
+                            <a href="#">Book now</a>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <img src="./assets/images/tab-5.png" />
+                        <div class="slide_hover">
+                            <p>Tower of  London</p>
+                            <span>Take a tour with one of the Yeoman Warders around the Tower of London, one of the world's most famous buildings. </span>
+                            <a href="#">Book now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="main__bar"></div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer_wrap">
+            <div class="footer_col">
+                <p class="head"><span>articles</span></p>
+                <a href="#">Exploring the food in the heart of the London</a>
+                <span>by Felecia Wilson&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;25 Aug, 2016 </span>
+                <a href="#">Exploring the food in the heart of the London</a>
+                <span>by Felecia Wilson&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;25 Aug, 2016 </span>
+                <a href="#">Exploring the food in the heart of the London</a>
+                <span>by Felecia Wilson&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;25 Aug, 2016 </span>
+            </div>
+            <div class="footer_col">
+                <p class="head"><span>about us</span></p>
+                <p>London, the capital of England and the United Kingdom, is a 21st-century city with history stretching back to Roman times. At its centre stand the imposing Houses of Parliament, the iconic ‘Big Ben’ clock tower and Westminster Abbey, site of British monarch coronations. Across the Thames River, the London Eye observation wheel provides panoramic views of the South Bank cultural complex, and the entire city.</p>
+            </div>
+            <div class="footer_col">
+                <p class="head"><span>newsletter</span></p>
+                <p class="form">Get updates about new tours, travel tips, photo guides and more !</p>
+                <form>
+                    <input type="text" placeholder="Name" />
+                    <input type="email" placeholder="E-mail" />
+                    <input type="submit" value="Send" />
+                </form>
+            </div>
+        </div>
+        <div class="copyright">© Copyright 2016  by Andrei Rotariu</div>
+    </footer>
+
 <script type="text/javascript" src="vendors.js"></script><script type="text/javascript" src="final_project.js"></script></body>
+<script src="js/baron.js"></script>
+<script src="final_project.js"></script>
 </html>

@@ -81,6 +81,8 @@ module.exports = __webpack_require__(331);
 
 __webpack_require__(332);
 
+baron({ root: '.trip_slider', scroller: '.trip_slider_wrapper', bar: '.main__bar', scrollingCls: '_scrolling', draggingCls: '_dragging', direction: 'h', impact: 'scroller' });
+
 /***/ }),
 
 /***/ 332:
